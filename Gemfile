@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
@@ -45,6 +45,7 @@ group :development, :test do
 end
 
 group :production do
+  gem 'sqlite3'
   gem 'rails_12factor'
 end
 
