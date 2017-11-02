@@ -1,5 +1,5 @@
 <script language="Javascript">
-    Stripe.setPublishableKey("<%= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>");
+    Stripe.setPublishableKey("<%= Rails.application.secrets.stripe_publishable_key %>");
 </script>
 
 
